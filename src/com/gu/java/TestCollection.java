@@ -17,12 +17,24 @@ public class TestCollection {
     public  void testCollection(){
        Collection coll = new ArrayList();
        coll.add("add");
+       coll.add("add");
+       coll.add("add");
+       coll.add("add");
+       System.out.println("list设置的值为"+ coll);
        String[] s = {"aa","bb","cc"};
+       System.out.println("list转成数组的形式为"+s);
 
       // 将数组转化为list
        List strlist =  Arrays.asList(s);
+
        coll.addAll(strlist);
        System.out.println(coll.size());
+
+      // 判断数组是否为空
+      System.out.println(coll.isEmpty());
+
+      // 判断集合中是否存在
+      System.out.println(coll.contains("add"));
 
    }
 
